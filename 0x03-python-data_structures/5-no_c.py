@@ -1,7 +1,4 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    for i in my_string:
-        if i == 'c' or i == 'C':
-            continue
-        else:
-            print('{}'.format(i), end='')
+    list = [c for c in my_string if c != 'c' and c != 'C']
+    return ''.join(list)
